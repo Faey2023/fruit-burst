@@ -15,6 +15,18 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <!-- title  -->
     <title>Fruit burst</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-sans-serif {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
     <!-- custom styles -->
     <script>
       tailwind.config = {
@@ -28,9 +40,10 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-sans-serif">
     <header class="container mx-auto">
       <!-- nav section  -->
+
       <nav></nav>
       <!-- banner section  -->
       <section></section>
@@ -44,6 +57,29 @@
       <section></section>
     </main>
     <!-- footer section  -->
-    <footer class="container mx-auto"></footer>
+    <footer class="footer bg-black justify-center items-center">
+      <div class="justify-center items-center">
+        <div class="flex gap-1 items-center pb-10 pt-20 mx-auto">
+          <img src="images/logo.png" alt="" />
+          <h4 class="text-[#FFF] text-4xl font-bold">Fruit Burst</h4>
+        </div>
+        <div class="text-[#FFF] pb-10 flex gap-14">
+          <a href=""> Home</a>
+          <a href="">About us</a>
+          <a href="">Shop</a>
+          <a href="">All Fruits</a>
+          <a href="">Support</a>
+          <a href="">My Account</a>
+        </div>
+        <div class="flex flex-row gap-10 pb-32 pl-14">
+          <a href=""><img src="images/icons/twit svg.svg" alt="" /></a>
+          <a href=""><img src="images/icons/facebook 1 (1).jpg" alt="" /></a>
+          <a href=""><img src="images/icons/Group 49.jpg" alt="" /></a>
+          <a href=""><img src="images/icons/linkedin 1.svg" alt="" /></a>
+          <a href=""><img src="images/icons/instagram 1.svg" alt="" /></a>
+          <a href=""><img src="images/icons/apple 1.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
