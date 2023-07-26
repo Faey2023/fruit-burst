@@ -48,8 +48,8 @@
       <!-- nav section  -->
       <nav class="my-2">
         <!-- responsive nav  -->
-        <div class="navbar-start flex flex-row-reverse lg:hidden">
-          <div class="dropdown flex-1">
+        <div class="flex lg:hidden">
+          <div class="dropdown flex-1 navbar-start">
             <label tabindex="0" class="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,18 +70,15 @@
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              <a href="">Home</a>
+              <a href="">About Us</a>
+              <a href="">Shop</a>
+              <a href="">All Fruits</a>
             </ul>
           </div>
-          <div class="flex items-center justify-center gap-4">
+          <div
+            class="navbar-end flex justify-center items-center text-center gap-4"
+          >
             <img src="images/logo.png" alt="" />
             <h1>Fruit Burst</h1>
           </div>
