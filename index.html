@@ -117,7 +117,7 @@
     </header>
     <main class="">
       <!-- deal of the day  -->
-      <section class="my-4 text-col-black">
+      <section class="my-10 text-col-black">
         <div class="flex flex-col justify-between lg:flex-row mb-10">
           <div class="flex flex-col md:max-w-[615px] justify-between space-y-4">
             <h1 class="text-5xl font-bold">Deal of the day</h1>
@@ -156,11 +156,11 @@
           </div>
         </div>
         <!-- cards  -->
-        <div>
+        <div class="flex flex-col lg:flex-row gap-4">
           <!-- card 1 -->
           <div class="card w-96 border-2 border-gray-50">
             <figure class="px-10 pt-10">
-              <img src="/images/apple.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/apple.png" alt="apple" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title border-b-2 border-b-col-pink">
@@ -179,9 +179,11 @@
                 </button>
                 <dialog id="my_modal_1" class="modal">
                   <form method="dialog" class="modal-box">
-                    <div class="flex flex-col justify-center items-center">
+                    <div
+                      class="flex flex-col justify-center items-center space-y-3"
+                    >
                       <img src="images/apple.png" alt="" />
-                      <h2>Apples</h2>
+                      <h2 class="text-4xl font-bold">Apples</h2>
                       <p>Freshly picked apples right at your doorstep.</p>
                       <img src="images/icons/rating.jpg" alt="" />
                       <div class="modal-action text-center">
@@ -201,6 +203,151 @@
               </div>
             </div>
           </div>
+          <!-- card 2 -->
+          <div class="card w-96 border-2 border-gray-50">
+            <figure class="px-10 pt-10">
+              <img src="images/orange.png" alt="Orange" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title border-b-2 border-b-col-pink">
+                12.90$ - 18.85$
+              </h2>
+              <p class="text-col-grey">Orange</p>
+              <img src="images/icons/rating.jpg" alt="" />
+              <div class="card-actions">
+                <!-- modal 2 -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button
+                  class="text-col-pink text-lg font-semibold"
+                  onclick="my_modal_2.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_2" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div
+                      class="flex flex-col justify-center items-center space-y-3"
+                    >
+                      <img src="images/orange.png" alt="" />
+                      <h2 class="text-4xl font-bold">Oranges</h2>
+                      <p>Freshly picked Oranges right at your doorstep.</p>
+                      <img src="images/icons/rating.jpg" alt="" />
+                      <div class="modal-action text-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button
+                          class="btn text-col-pink border-col-pink bg-col-white"
+                        >
+                          Close
+                        </button>
+                        <button class="btn bg-col-pink text-col-white">
+                          BUY NOW
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card w-96 border-2 border-gray-50">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/dragon fruit.png"
+                alt="Dragon Fruit"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title border-b-2 border-b-col-pink">
+                12.90$ - 18.85$
+              </h2>
+              <p class="text-col-grey">Dragon Fruit</p>
+              <img src="images/icons/rating.jpg" alt="" />
+              <div class="card-actions">
+                <!-- modal 3 -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button
+                  class="text-col-pink text-lg font-semibold"
+                  onclick="my_modal_3.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_3" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div
+                      class="flex flex-col justify-center items-center space-y-3"
+                    >
+                      <img src="images/dragon fruit.png" alt="" />
+                      <h2 class="text-4xl font-bold">Dragon Fruit</h2>
+                      <p>Freshly picked Dragon Fruit right at your doorstep.</p>
+                      <img src="images/icons/rating.jpg" alt="" />
+                      <div class="modal-action text-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button
+                          class="btn text-col-pink border-col-pink bg-col-white"
+                        >
+                          Close
+                        </button>
+                        <button class="btn bg-col-pink text-col-white">
+                          BUY NOW
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card w-96 border-2 border-gray-50">
+            <figure class="px-10 pt-10">
+              <img src="images/banana.png" alt="Banana" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title border-b-2 border-b-col-pink">
+                12.90$ - 18.85$
+              </h2>
+              <p class="text-col-grey">Banana</p>
+              <img src="images/icons/rating.jpg" alt="" />
+              <div class="card-actions">
+                <!-- modal 4 -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button
+                  class="text-col-pink text-lg font-semibold"
+                  onclick="my_modal_4.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div
+                      class="flex flex-col justify-center items-center space-y-3"
+                    >
+                      <img src="images/banana.png" alt="" />
+                      <h2 class="text-4xl font-bold">Banana</h2>
+                      <p>Freshly picked Banana right at your doorstep.</p>
+                      <img src="images/icons/rating.jpg" alt="" />
+                      <div class="modal-action text-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button
+                          class="btn text-col-pink border-col-pink bg-col-white"
+                        >
+                          Close
+                        </button>
+                        <button class="btn bg-col-pink text-col-white">
+                          BUY NOW
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-6">
+          <button class="btn bg-col-pink text-col-white">Shop All</button>
         </div>
       </section>
       <!-- meet the team section  -->
