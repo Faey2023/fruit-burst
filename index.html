@@ -35,6 +35,8 @@
             colors: {
               "col-white": "#FFF",
               "col-pink": "#F85559",
+              "col-black": "#121212",
+              "col-grey": "#12121299",
             },
           },
         },
@@ -115,7 +117,92 @@
     </header>
     <main class="">
       <!-- deal of the day  -->
-      <section></section>
+      <section class="my-4 text-col-black">
+        <div class="flex flex-col justify-between lg:flex-row mb-10">
+          <div class="flex flex-col md:max-w-[615px] justify-between space-y-4">
+            <h1 class="text-5xl font-bold">Deal of the day</h1>
+            <p class="text-col-grey text-base font-normal">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <!-- timer  -->
+          <div class="flex gap-5 justify-center items-center">
+            <div>
+              <span class="countdown font-bold text-5xl">
+                <span style="--value: 15"></span>
+              </span>
+              days
+            </div>
+            <div>
+              <span class="countdown font-bold text-5xl">
+                <span style="--value: 10"></span>
+              </span>
+              hours
+            </div>
+            <div>
+              <span class="countdown font-bold text-5xl">
+                <span style="--value: 24"></span>
+              </span>
+              min
+            </div>
+            <div>
+              <span class="countdown font-bold text-5xl">
+                <span style="--value: 33"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+        <!-- cards  -->
+        <div>
+          <!-- card 1 -->
+          <div class="card w-96 border-2 border-gray-50">
+            <figure class="px-10 pt-10">
+              <img src="/images/apple.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title border-b-2 border-b-col-pink">
+                12.90$ - 18.85$
+              </h2>
+              <p class="text-col-grey">Apples</p>
+              <img src="images/icons/rating.jpg" alt="" />
+              <div class="card-actions">
+                <!-- modal 1 -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button
+                  class="text-col-pink text-lg font-semibold"
+                  onclick="my_modal_1.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex flex-col justify-center items-center">
+                      <img src="images/apple.png" alt="" />
+                      <h2>Apples</h2>
+                      <p>Freshly picked apples right at your doorstep.</p>
+                      <img src="images/icons/rating.jpg" alt="" />
+                      <div class="modal-action text-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button
+                          class="btn text-col-pink border-col-pink bg-col-white"
+                        >
+                          Close
+                        </button>
+                        <button class="btn bg-col-pink text-col-white">
+                          BUY NOW
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- meet the team section  -->
       <section class="text-col-white">
         <div
@@ -126,13 +213,15 @@
           <div class="hero-content text-neutral-content">
             <div class="justify-center items-center text-center mx-auto">
               <h1 class="text-5xl font-bold pb-6">Meet the team section</h1>
-
-              <p class="text-base font-medium max-w-[615px]">
-                One piece of log creates a small fire, adequate to warm you up,
-                add just a few more pieces to blast an immense bonfire, large
-                enough to warm up your entire circle of friends; needless to say
-                that individuality counts but teamwork dynamites.
-              </p>
+              <div class="max-w-[615px] mx-auto">
+                <p class="text-base font-medium">
+                  One piece of log creates a small fire, adequate to warm you
+                  up, add just a few more pieces to blast an immense bonfire,
+                  large enough to warm up your entire circle of friends;
+                  needless to say that individuality counts but teamwork
+                  dynamites.
+                </p>
+              </div>
 
               <!-- member section  -->
               <div class="flex gap-32">
